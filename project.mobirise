@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "cetus",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1f2224"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/cetus_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://cetus-zone.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://cetus-zone.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "iaryjjovs4",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Cetus | Cetus Sui | Cetus Zone",
+        "meta_descr": "Cetus is the leading DEX and liquidity protocol on Sui, which serves as the key liquidity and swap infra of the Sui ecosystem.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/cetus.png\" alt=\"cetus\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uuEZ1mrUvu",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1f2224\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1f2224\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Cetus Zone: Bridging the Gap in Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of decentralized finance (DeFi), new platforms emerge regularly, each aiming to offer innovative solutions to existing challenges. Among these platforms is <a href=\"https://cetus-zone.github.io/\" class=\"text-primary\"><b>Cetus Zone</b></a>, a project designed to enhance the trading experience in the DeFi space by providing advanced liquidity and trading options. Cetus Zone stands out for its focus on creating an efficient and user-friendly ecosystem for traders, liquidity providers, and investors. This blog will explore the key features, functionalities, and potential impact of Cetus Zone on the DeFi landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Cetus Zone?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://app.cetus.zone/\" class=\"text-primary\"><b>Cetus Zone</b></a> is a decentralized exchange (DEX) and liquidity aggregation platform built on the Celo blockchain. It aims to facilitate seamless trading and liquidity provision for users while ensuring a high level of efficiency and security. By leveraging the unique capabilities of the Celo ecosystem, Cetus Zone provides users with access to a wide range of trading pairs, innovative financial products, and a robust infrastructure to support their trading activities.<br><br><b>The Vision Behind Cetus Zone</b><br>The vision of Cetus Zone is to democratize access to trading and liquidity in the DeFi space. By creating a user-centric platform that prioritizes efficiency and ease of use, Cetus Zone aims to empower users, enabling them to take full advantage of the opportunities presented by the decentralized financial ecosystem. The platform is designed to cater to both novice traders and experienced investors, making it accessible to a broad audience.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Cetus Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Decentralized Exchange (DEX)</b><br>At its core, Cetus Zone operates as a decentralized exchange, allowing users to trade cryptocurrencies directly from their wallets. This eliminates the need for intermediaries, reducing the risks associated with centralized exchanges, such as hacks and fraud. Users retain full control over their assets, enhancing security and privacy.<br><br><b>2. Liquidity Aggregation</b><br>Cetus Zone incorporates a liquidity aggregation model, which allows users to access liquidity from multiple sources. This ensures that traders can execute orders at the best available prices, improving the overall trading experience. By aggregating liquidity, Cetus Zone aims to minimize slippage and improve trade execution times.<br><br><b>3. User-Friendly Interface</b><br>One of the standout features of Cetus Zone is its intuitive user interface. The platform is designed with user experience in mind, providing a streamlined and easy-to-navigate environment. Whether users are new to DeFi or seasoned traders, they can quickly familiarize themselves with the platform's functionalities.<br><br><b>4. Cross-Chain Compatibility</b><br>Recognizing the growing importance of interoperability in the blockchain space, Cetus Zone aims to support cross-chain trading. This feature enables users to trade assets from different blockchain networks seamlessly, expanding the range of available trading pairs and enhancing user flexibility.<br><br><b>5. Advanced Trading Tools</b><br>Cetus Zone offers a suite of advanced trading tools designed to enhance the trading experience. These tools include market analysis features, price alerts, and charting capabilities. By equipping users with the necessary tools to make informed trading decisions, Cetus Zone aims to empower traders to optimize their strategies.<br><br><b>6. Staking and Yield Farming</b><br>To further incentivize user participation, Cetus Zone incorporates staking and yield farming mechanisms. Users can stake their assets to earn rewards, while liquidity providers can participate in yield farming to generate passive income. These features not only enhance user engagement but also contribute to the overall liquidity of the platform.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Problems Cetus Zone Aims to Solve</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Fragmented Liquidity</b><br>The DeFi space is characterized by fragmented liquidity across various platforms. This fragmentation can lead to suboptimal trading experiences, with users facing high slippage and low execution speeds. Cetus Zone addresses this issue through its liquidity aggregation model, ensuring that users have access to the best available prices.<br><br><b>2. Complexity of Use</b><br>Many DeFi platforms present a steep learning curve for new users, often deterring them from participating in the ecosystem. Cetus Zone aims to simplify the user experience, providing an intuitive interface and educational resources to help users navigate the platform confidently.<br><br><b>3. Limited Access to Cross-Chain Assets</b><br>As the blockchain ecosystem expands, the ability to trade assets across different networks becomes increasingly important. Cetus Zone seeks to break down barriers to cross-chain trading, allowing users to access a wider array of assets and trading opportunities.<br><br><b>4. Inefficient Trading Processes</b><br>Traditional trading platforms often suffer from inefficiencies, such as slow transaction times and high fees. Cetus Zone aims to optimize trading processes through advanced technology and liquidity aggregation, providing users with a more efficient trading experience.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Cetus Zone Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User Registration and Wallet Connection</b><br>Getting started with Cetus Zone is simple. Users can register on the platform and connect their crypto wallets, such as MetaMask or Celo Wallet. This wallet connection allows users to interact with the DEX while retaining full control over their assets.<br><br><b>2. Trading on the DEX</b><br>Once connected, users can access the trading interface, where they can select trading pairs, view price charts, and execute trades. The liquidity aggregation model ensures that users receive the best prices available, minimizing slippage during trades.<br><br><b>3. Staking and Yield Farming</b><br>Users can participate in staking and yield farming by depositing their assets into designated pools. Stakers earn rewards over time, while liquidity providers can generate passive income by providing liquidity to trading pairs. The platform provides detailed information about available pools and the associated rewards.<br><br><b>4. Utilizing Advanced Tools</b><br>Cetus Zone’s advanced trading tools allow users to analyze market trends, set price alerts, and review historical data. These tools empower users to make informed trading decisions and optimize their strategies based on market conditions.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using Cetus Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Enhanced Trading Experience<br>Cetus Zone's liquidity aggregation model and user-friendly interface create an enhanced trading experience. Users can execute trades quickly and efficiently, reducing the frustration often associated with DeFi trading.<br><br>2. Security and Control<br>As a decentralized platform, Cetus Zone allows users to retain control over their assets. By eliminating the need for intermediaries, the platform enhances security and reduces the risk of hacks and fraud.<br><br>3. Access to Diverse Assets<br>With cross-chain compatibility, Cetus Zone enables users to trade a wide range of assets from various blockchain networks. This diversity expands trading opportunities and enhances user flexibility.<br><br>4. Passive Income Opportunities<br>Through staking and yield farming, users can generate passive income on their assets. This incentivizes participation in the platform and contributes to overall liquidity.<br><br>5. Educational Resources<br>Cetus Zone prioritizes user education, providing resources and tutorials to help users understand the DeFi landscape. This commitment to education empowers users to make informed decisions.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Cetus Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Features and Functionality</b><br>As the DeFi space continues to evolve, Cetus Zone is likely to expand its offerings. This may include new trading pairs, additional financial products, and enhanced features to improve the user experience.<br><br><b>2. Enhancing Cross-Chain Capabilities</b><br>Cetus Zone will likely focus on enhancing its cross-chain capabilities, allowing users to trade an even broader range of assets seamlessly. This will position the platform as a leader in cross-chain trading.<br><br><b>3. Community Engagement and Governance</b><br>The platform may emphasize community engagement through governance mechanisms, allowing users to participate in decision-making processes. This approach fosters a sense of ownership among users and helps shape the platform's future.<br><br><b>4. Continued User Education</b><br>Cetus Zone is expected to maintain its commitment to user education, developing new resources and initiatives to keep users informed about the latest trends and best practices in DeFi.<br><br><b>5. Integration with Other Platforms</b><br>To enhance its ecosystem, Cetus Zone may explore partnerships and integrations with other DeFi platforms. This collaborative approach can improve liquidity, expand service offerings, and provide users with more options.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The DeFi space is characterized by significant volatility, which can impact trading strategies and investment outcomes. Users must be aware of the risks associated with trading in a rapidly changing environment.<br><br><b>2. Regulatory Landscape</b><br>As DeFi gains prominence, it may attract regulatory scrutiny. Cetus Zone must navigate potential regulatory challenges to ensure compliance and maintain user trust.<br><br><b>3. Competition</b><br>The DeFi market is highly competitive, with numerous platforms offering similar services. Cetus Zone must continually innovate and differentiate itself to attract and retain users.<br><br><b>4. Security Risks</b><br>Despite efforts to enhance security, the DeFi space is not immune to vulnerabilities. Users should exercise caution and conduct due diligence when engaging with any DeFi platform.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Cetus Zone represents a significant advancement in the decentralized finance landscape, offering users a robust platform for trading and liquidity provision. With its focus on user experience, liquidity aggregation, and cross-chain compatibility, Cetus Zone aims to empower traders and investors alike.<br><br>As the platform continues to evolve and expand its offerings, it has the potential to become a leading player in the DeFi space, democratizing access to trading and liquidity while enhancing the overall user experience. For individuals seeking to navigate the complexities of decentralized finance, Cetus Zone provides an accessible and innovative solution that bridges the gap between traditional finance and the emerging world of DeFi.<br><br>Ultimately, Cetus Zone embodies the principles of decentralization and innovation that define the DeFi movement. By prioritizing user control, security, and education, it paves the way for a new era of financial opportunities, making it a platform to watch in the coming years. Whether you are a seasoned trader or a newcomer to the DeFi space, Cetus Zone offers the tools and resources needed to thrive in the dynamic world of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uuEZ1BEhzC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
